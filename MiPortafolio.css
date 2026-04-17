@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+:root{
+     --primary-color : rgb(2, 42, 66);
+    --secondary-color : rgb( 98 , 155 , 182);
+    --tercer-color : rgb(100, 164, 175);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 48px 0 ;   
+
+}
+.navbar{
+    
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;    
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navbar li a:hover{
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.navbar li a:active{
+    transform: scale(0.95);
+}
+.navbar li a {
+    position: relative;
+}
+.navbar li a:hover::after {
+    width: 100%;
+}
+section {
+    padding: 40px;
+    text-align: center;
+}
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.hero-content h2{
+    background-color: var(--secondary-color);
+    border-radius: 48px 0 ;
+    padding: 25px 25px;
+    color: var(--primary-color);
+    
+}
+.experiencia h2{
+    background-color: var(--secondary-color);
+     border-radius: 48px 0 ;
+     padding: 25px 25px;
+     color: var(--primary-color);
+}
+.proy{
+    background-color: var(--secondary-color);
+     border-radius: 48px 0 ;
+     padding: 25px 25px;
+     color: var(--primary-color);
+     text-align: center;
+}
+.contactos h2{
+    background-color: var(--secondary-color);
+     border-radius: 48px 0 ;
+     padding: 25px 25px;
+     color: var(--primary-color);
+
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+body{
+    
+    background-color: var(--primary-color);
+    color: var(--tercer-color);
+}
+.footer{ 
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.social-link{
+    display: flex;
+    font-size: 30px;
+    color: var(--tercer-color);
+    gap: 20px;
+}
+
+.proyecto-img{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.proyecto-card {
+    /*background:var(--tercer-color);*/
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 20px;
+    width: 280px;
+    text-align: center;
+    
+     
+}
+
